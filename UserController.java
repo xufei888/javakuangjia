@@ -53,5 +53,10 @@ public class UserController {
         userService.delteById(id);
         return "redirect:/managerUser/";
     }
-
+    
+    @RequestMapping("/update")
+    public String update(){
+        userService.update();
+        return "success";
+    }
 }
